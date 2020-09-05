@@ -10,3 +10,11 @@ jobs:
       - uses: ./action-a
         with:
           MY_NAME: "Brian Le"
+  secondJob:
+    name: this is 2nd job
+    runs-on: debian-latest
+    steps:
+      - uses: actions/checkout@v1
+      - uses: ./action-a
+        with:
+          MY_NAME: "Edna Tran"
